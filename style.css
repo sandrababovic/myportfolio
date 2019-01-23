@@ -1,0 +1,493 @@
+* {
+  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+  background-color: #000;
+  font-family:Didot, serif;
+}
+
+/*About */
+
+#welcome-section {
+  
+  background-image: linear-gradient(to right, rgba(252,236,252,1) 0%, rgba(253,137,215,0.4) 40%, rgba(255,124,216,0.38) 100%),
+  url("https://images.pexels.com/photos/597331/pexels-photo-597331.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:bottom;
+  height: 100vh;
+  width: 100vw;
+  max-height: 1200px;
+  
+  
+}
+
+.welcome {
+
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+}
+
+.welcome h1 {
+  
+ font-weight: bold; 
+ text-align:center; 
+ line-height: 1.5em;
+ padding-top: 220px;
+ font-size: 6vw;
+ animation-name: hcolor;
+ animation-duration: 5s;
+ animation-delay: -2s; 
+ animation-iteration-count: infinite;
+ font-family: Jazz LET, fantasy;
+
+}
+.welcome p {
+
+  text-align: center;
+  font-size: 25px; 
+  font-style: oblique;
+  font-weight: bold;
+  color: #fff;
+
+}
+
+@keyframes hcolor {
+  0%   {color:#000;font-size:5vw;}
+  40%  {color:#303030;font-size:5.2vw; }
+  70%  {color: #484848;font-size:5.4vw; }
+  100% {color:#fff;font-size:5.6vw;}
+}
+
+/*navigation*/
+
+#navbar {
+
+  background: #000;
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  padding-top: 30px;
+  text-align: right;
+  padding-right: 50px;
+  background-color:rgba(0, 0, 0, 0.3);
+
+}
+
+#navbar ul li {
+  
+  display: inline-block;
+  
+}
+
+#navbar ul li a {
+  
+  text-decoration: none;
+  font-size: 23px;
+  color: #fff;
+  padding-left:10px;
+}
+
+#navbar ul li a:hover {
+  
+ color: rgba(247, 160, 253, 1);
+  text-shadow: 2px 2px 2px white;
+ font-weight: bold; 
+
+}
+
+/*my work*/
+
+h2.myprojects {
+
+  margin-top: 20px;
+  margin-bottom: 40px;
+  background-color: #000;
+  color: rgb(247, 160, 253);
+  text-align: center;
+  font-size: 30px;
+  font-style: oblique;
+  text-transform: uppercase;
+}
+
+.grid-container {
+  
+  border-top:2px solid rgb(247, 160, 253);
+  padding-top: 30px;
+  padding-bottom: 40px;
+  background-color: #000;
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows:1fr;
+  grid-gap: 30px;
+  justify-content: center;
+  align-content: center;
+  grid-template-areas: "one two";
+                      
+  
+}
+
+
+#item1 {
+  grid-area: one; 
+}
+#item2 {
+  grid-area: two;
+}
+
+#item1 img {
+  
+  
+  height: 400px;
+  width: 80%;
+  border: 1px solid white;
+ 
+}
+#item2 img {
+  
+  
+  height: 400px;
+  width: 80%;
+  border: 1px solid white;
+ 
+}
+
+p.project-title {
+
+  margin-bottom: 15px;
+  color: #fff;
+  font-size: 20px;
+}
+
+/*contact*/
+
+#contact {
+
+  border-top: 2px solid rgb(247, 160, 253);
+  border-bottom: 2px solid rgb(247, 160, 253);
+  background: #000;
+  height: auto;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.myphoto {
+
+  width: 10%;
+  height: 90%;
+  margin-right:25px;
+
+}
+
+
+span.email, span.github {
+
+color: white;
+font-size: 30px;
+
+
+}
+span.email i {
+
+  padding-bottom:7px;
+}
+
+span.email a, span.github a {
+  color: white;
+  text-decoration: none;
+  padding-left: 15px;
+  font-size: 25px;
+
+}
+
+span.email a:hover, span.github a:hover {
+
+  color:rgb(247, 160, 253);
+}
+
+/*Responsive*/
+
+@media (max-width:850px) {
+  
+  .grid-container {
+
+  margin-top: 100px;
+  padding-bottom: 30px;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows:auto auto;
+  grid-gap: 20px;
+  justify-content: space-around;
+  align-content: center;
+  grid-template-areas: "one"
+                       "two";
+                      
+  
+}
+}
+
+@media (max-width:550px) {
+
+  #navbar {
+
+  
+  text-align: center;
+  padding-right: 10px;
+
+
+}
+
+.myphoto {
+
+  width: 15%;
+  height: 90%;
+  margin-right:10px;
+
+}
+
+
+span.email, span.github {
+
+
+font-size: 15px;
+
+
+}
+
+
+span.email a, span.github a {
+  color: white;
+  text-decoration: none;
+  padding-left: 10px;
+  font-size: 15px;
+
+}
+
+}
+
+
+
+/*Astrology project*/
+
+.astrology h2,.astrology h3,.astrology p {
+
+  color: #fff;
+
+}
+
+h1.astrogrineta {
+
+font-size: 50px;
+text-align: center;
+padding-top: 25px;
+text-shadow: 2px 2px 5px #fff;
+color:#fff;
+
+}
+
+.aboutproject h2 {
+
+  font-size: 30px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  color:#fff;
+}
+
+.aboutproject h3 {
+
+color:#fff;
+ }
+
+
+.astrology {
+
+  width: 100%;
+  height: 100vh;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  margin-left: 40px;
+
+}
+
+.aboutproject {
+
+  width: 40%;
+}
+
+.aboutproject p {
+
+  font-size: 20px;
+  padding-top: 20px;
+  padding-right: 5px;
+  padding-bottom: 50px;
+  color:#fff;
+}
+
+
+.screenshot img {
+
+width: 90%;
+height: 90%;
+border: 1px solid #fff;
+
+}
+
+
+
+ul.skills {
+  color: #fff;
+  padding-top: 20px;
+}
+
+ul.skills li {
+
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+/*Responsive astrology project*/
+
+@media (max-width: 1000px) {
+
+.astrology {
+
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-left: 30px;
+
+}
+.aboutproject {
+
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.screenshot img {
+
+width: 80%;
+height: 80%;
+border: 1px solid #fff;
+
+}
+}
+
+/*Resume project*/
+
+.resume {
+
+  width: 100%;
+  height: 100vh;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  margin-left: 50px;
+
+}
+.resume h2, .resume h3, .resume p {
+
+  color: #fff;
+
+}
+h1.cv {
+
+font-size: 50px;
+text-align: center;
+padding-top: 25px;
+text-shadow: 2px 2px 5px #fff;
+color:#fff;
+
+}
+
+.aboutproject-cv h2 {
+
+  font-size: 30px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  color:#fff;
+}
+
+.aboutproject-cv p {
+
+  font-size: 20px;
+  padding-top: 20px;
+  padding-right: 5px;
+  padding-bottom: 50px;
+  color:#fff;
+}
+
+
+.aboutproject-cv {
+
+  width: 40%;
+}
+
+
+.screenshot-cv img {
+
+width: 90%;
+height: 90%;
+border: 1px solid #fff;
+
+}
+
+ul.skills-cv {
+  color: #fff;
+  padding-top: 20px;
+}
+
+ul.skills-cv li {
+
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+/*Responsive - resume*/
+
+@media (max-width: 1000px) {
+
+.resume {
+
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-left: 30px;
+
+}
+.aboutproject-cv {
+
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.screenshot-cv img {
+
+width: 80%;
+height: 80%;
+border: 1px solid #fff;
+
+}
+}
