@@ -251,11 +251,24 @@ span.email a:hover, span.github a:hover {
 
 }
 
-  .welcome h1 {
+ .welcome h1 {
 
-  font-size: 35px;
+  font-size: 20px;
+ line-height: 1.4em;
+ animation-name: hcolor-responsive;
+ animation-duration: 5s;
+ animation-delay: -2s; 
+ animation-iteration-count: infinite;
+ font-family: Jazz LET, fantasy;
 
 }
+
+@keyframes hcolor-responsive {
+  0%   {color:#000;font-size:20px;}
+  50%  {color:#303030;font-size:25px; }
+  100% {color:#fff;font-size:30px;}
+}
+
 
 .welcome p {
 
