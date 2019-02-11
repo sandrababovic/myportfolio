@@ -108,13 +108,13 @@ body {
   background-color: #000;
   text-align: center;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto;
   grid-template-rows:150px 1fr;
   grid-gap: 30px;
   justify-content: center;
   align-content: center;
-  grid-template-areas: "three three"
-                       "one two";  
+  grid-template-areas: "three three three"
+                       "one two four";  
 }
 
 
@@ -131,23 +131,34 @@ body {
   grid-area: three;
   color:rgba(247, 160, 253, 1);
   font-size: 35px;
-  padding-top: 130px;
+  padding-top: 90px;
   font-style: oblique;
+}
+#item4 {
+ grid-area: four;
 }
 
 #item1 img {
    
   height: 400px;
-  width: 80%;
+  width: 90%;
   border: 1px solid white; 
 }
 
 #item2 img {
     
   height: 400px;
-  width: 80%;
+  width: 90%;
   border: 1px solid white; 
 }
+
+#item4 img{
+
+  height: 400px;
+  width: 90%;
+  border: 1px solid white;
+ 
+} 
 
 p.project-title {
 
@@ -208,7 +219,7 @@ span.email a:hover, span.github a:hover {
 
 /*Responsive*/
 
-@media (max-width:850px) {
+@media (max-width:900px) {
   
   .grid-container {
 
@@ -218,13 +229,14 @@ span.email a:hover, span.github a:hover {
   height: auto;
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows:auto auto auto;
+  grid-template-rows:auto auto auto auto;
   grid-gap: 20px;
   justify-content: space-around;
   align-content: center;
   grid-template-areas: "three"
                        "one"
-                       "two";
+                       "two"
+                       "four";
                       
 }
 }
@@ -266,14 +278,18 @@ span.email a:hover, span.github a:hover {
 
 #item1 img {
    
-  height: 200px;
+  height: 250px;
    
 }
 #item2 img {
     
-  height: 200px;
-
+  height: 250px;
 }
+#item4 img {
+
+  height: 250px;
+} 
+  
  #item3 {
 
   padding-top: 45px;
@@ -305,10 +321,7 @@ span.email a, span.github a {
   font-size: 15px;
 
 }
-
 }
-
-
 
 /*Astrology project*/
 
@@ -340,7 +353,6 @@ color:#fff;
 
 color:#fff;
  }
-
 
 .astrology {
 
@@ -511,6 +523,112 @@ ul.skills-cv li {
 }
 
 .screenshot-cv img {
+
+width: 80%;
+height: 80%;
+border: 1px solid #fff;
+
+}
+}
+
+/*Gallery - hobbies */
+
+.myhobbies h2,.myhobbies h3,.myhobbies p {
+
+  color: #fff;
+
+}
+
+h1.hobby {
+
+font-size: 50px;
+text-align: center;
+padding-top: 25px;
+text-shadow: 2px 2px 5px #fff;
+color:#fff;
+
+}
+
+.aboutproject-hobby h2 {
+
+  font-size: 30px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  color:#fff;
+}
+
+.aboutproject-hobby h3 {
+
+color:#fff;
+ }
+
+
+.myhobbies {
+
+  width: 100%;
+  height: 100vh;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  margin-left: 40px;
+
+}
+.aboutproject-hobby {
+
+  width: 40%;
+}
+
+.aboutproject-hobby p {
+
+  font-size: 20px;
+  padding-top: 20px;
+  padding-right: 5px;
+  padding-bottom: 50px;
+  color:#fff;
+}
+
+
+.screenshot-hobby img {
+
+width: 90%;
+height: 90%;
+border: 1px solid #fff;
+
+}
+
+ul.skills-hobby {
+  color: #fff;
+  padding-top: 20px;
+}
+
+ul.skills-hobby li {
+
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+/*Responsive image gallery*/
+
+@media (max-width: 1000px) {
+
+.myhobbies {
+
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-left: 30px;
+
+}
+.aboutproject-hobby {
+
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.screenshot-hobby img {
 
 width: 80%;
 height: 80%;
