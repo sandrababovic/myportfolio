@@ -9,3 +9,21 @@ $(document).ready(function() {
           }
         });
 });
+
+// Typewriter
+
+let i=0;
+let txt="I am interested in front-end web development.";
+let p=document.querySelector(".type");
+
+function typeWriter() {
+
+	if(i<txt.length){
+                
+        	p.innerHTML += txt.charAt(i);
+		i++;
+		setTimeout(typeWriter,80);
+	}
+}
+
+typeWriter();
