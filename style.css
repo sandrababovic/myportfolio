@@ -37,29 +37,18 @@ body {
  font-weight: bold; 
  text-align:center; 
  line-height: 1.5em;
- padding-top: 220px;
- font-size: 6vw;
- animation-name: hcolor;
- animation-duration: 5s;
- animation-delay: -2s; 
- animation-iteration-count: infinite;
+ padding-top: 35vh;
+ font-size: 5vw;
  font-family: Jazz LET, fantasy;
 }
-.welcome p {
+.type {
 
   text-align: center;
-  font-size: 25px; 
+  font-size: 22px; 
   font-style: oblique;
   font-weight: bold;
   color: #fff;
 
-}
-
-@keyframes hcolor {
-  0%   {color:#000;font-size:5vw;}
-  40%  {color:#303030;font-size:5.2vw; }
-  70%  {color: #484848;font-size:5.4vw; }
-  100% {color:#fff;font-size:5.6vw;}
 }
 
 /*navigation*/
@@ -248,6 +237,11 @@ span.email a:hover, span.github a:hover {
   
   height: 400px;  
 }
+ .welcome h1 {
+
+ padding-top: 50vh;
+
+}  
   
 }
 
@@ -263,23 +257,13 @@ span.email a:hover, span.github a:hover {
  .welcome h1 {
 
   font-size: 20px;
- line-height: 1.4em;
- animation-name: hcolor-responsive;
- animation-duration: 5s;
- animation-delay: -2s; 
- animation-iteration-count: infinite;
- font-family: Jazz LET, fantasy;
+ line-height:2em;
+ padding-top: 44vh;
 
 }
 
-@keyframes hcolor-responsive {
-  0%   {color:#000;font-size:20px;}
-  50%  {color:#303030;font-size:25px; }
-  100% {color:#fff;font-size:30px;}
-}
 
-
-.welcome p {
+.type {
   
   font-size: 18px; 
   width: 100%;
