@@ -90,7 +90,7 @@ body {
 
 .grid-container {
   
-  height: 100vh;
+  height: auto;
   border-top:2px solid rgb(247, 160, 253);
   padding-top: 30px;
   padding-bottom: 40px;
@@ -98,58 +98,58 @@ body {
   text-align: center;
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-template-rows:150px 1fr;
+  grid-template-rows:auto auto auto;
   grid-gap: 30px;
   justify-content: center;
   align-content: center;
-  grid-template-areas: "three three three"
-                       "one two four";  
+  grid-template-areas: "one one one"
+                       "two three four"
+                       "five six .";  
 }
-
 
 #item1 {
-  grid-area: one; 
-  padding-bottom: 10px;
-}
-#item2 {
-  grid-area: two;
-  padding-bottom: 10px;
-}
-
-#item3 {
-  grid-area: three;
+  grid-area: one;
   color:rgba(247, 160, 253, 1);
   font-size: 35px;
   padding-top: 90px;
   font-style: oblique;
 }
 
+#item2 {
+  grid-area: two;
+  padding-bottom: 10px;
+}
+#item3 {
+  grid-area: three; 
+  padding-bottom: 10px;
+ 
+}
+
 #item4 {
  grid-area: four;
 }
 
-#item1 img {
-   
-  height: 300px;
-  width: 90%;
-  border: 1px solid white; 
+#item5 {
+
+ grid-area: five;
+
 }
 
-#item2 img {
-    
-  height: 300px;
-  width: 90%;
-  border: 1px solid white; 
+#item6 {
+  grid-area: six;
 }
 
-#item4 img{
-
+#item2 img, #item3 img, #item4 img, #item5 img, #item6 img {
+  
+  
   height: 300px;
   width: 90%;
-  border: 1px solid white; 
-} 
+  border: 1px solid white;
+  border-radius: 10%;
+ 
+}
 
-#item1 img:hover, #item2 img:hover, #item4 img:hover {  
+#item2 img:hover, #item3 img:hover, #item4 img:hover, #item5 img:hover, #item6 img:hover  {  
 
   opacity: 0.5;
 }
@@ -223,17 +223,19 @@ span.email a:hover, span.github a:hover {
   height: auto;
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows:auto auto auto auto;
+  grid-template-rows:auto auto auto auto auto auto;
   grid-gap: 20px;
   justify-content: space-around;
   align-content: center;
-  grid-template-areas: "three"
-                       "one"
+  grid-template-areas: "one"
                        "two"
-                       "four";
+                       "three"
+                       "four"
+                       "five"
+                       "six";
                       
 }
-  #item1 img, #item2 img, #item4 img {
+  #item2 img, #item3 img, #item4 img, #item5 img, #item6 img {
   
   height: 400px;  
 }
@@ -270,21 +272,13 @@ span.email a:hover, span.github a:hover {
   
 }
 
-#item1 img {
-   
-  height: 250px;
-   
-}
-#item2 img {
-    
-  height: 250px;
-}
-#item4 img {
-
-  height: 250px;
+#item2 img, #item3 img , #item4 img, #item5 img, #item6 img{
+  
+  
+  height: 250px; 
 } 
   
- #item3 {
+ #item1 {
 
   padding-top: 45px;
 }
@@ -623,6 +617,227 @@ ul.skills-hobby li {
 }
 
 .screenshot-hobby img {
+
+width: 80%;
+height: 80%;
+border: 1px solid #fff;
+
+}
+}
+
+/*Random quote machine*/
+
+
+.random h2,.random h3,.random p {
+
+  color: #fff;
+
+}
+
+h1.randomquote {
+
+font-size: 50px;
+text-align: center;
+padding-top: 25px;
+text-shadow: 2px 2px 5px #fff;
+color:#fff;
+
+}
+
+.aboutproject-random h2 {
+
+  font-size: 30px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  color:#fff;
+}
+
+.aboutproject-random h3 {
+
+color:#fff;
+ }
+
+
+.random {
+
+  width: 100%;
+  height: 100vh;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  margin-left: 40px;
+
+}
+
+.aboutproject-random {
+
+  width: 40%;
+}
+
+.aboutproject-random p {
+
+  font-size: 20px;
+  padding-top: 20px;
+  padding-right: 5px;
+  padding-bottom: 50px;
+  color:#fff;
+}
+
+
+.screenshot-random img {
+
+width: 90%;
+height: 90%;
+border: 1px solid #fff;
+
+}
+
+
+
+ul.skills-random {
+  color: #fff;
+  padding-top: 20px;
+}
+
+ul.skills-random li {
+
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+
+/*Responsive random quote machine*/
+
+@media (max-width: 1000px) {
+
+.random {
+
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-left: 30px;
+
+}
+.aboutproject-random {
+
+  width: 80%;
+  margin-bottom: 20px;
+
+}
+
+.screenshot-random img {
+
+width: 80%;
+height: 80%;
+border: 1px solid #fff;
+
+}
+}
+
+/*Tailor store*/
+
+.tailor h2,.tailor h3, .tailor p {
+
+  color: #fff;
+
+}
+
+h1.tailorstr {
+
+font-size: 50px;
+text-align: center;
+padding-top: 25px;
+text-shadow: 2px 2px 5px #fff;
+color:#fff;
+
+}
+
+.aboutproject-tailor h2 {
+
+  font-size: 30px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  color:#fff;
+}
+
+.aboutproject-tailor h3 {
+
+color:#fff;
+ }
+
+
+.tailor {
+
+  width: 100%;
+  height: 100vh;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  margin-left: 40px;
+
+}
+
+.aboutproject-tailor {
+
+  width: 40%;
+}
+
+.aboutproject-tailor p {
+
+  font-size: 20px;
+  padding-top: 20px;
+  padding-right: 5px;
+  padding-bottom: 50px;
+  color:#fff;
+}
+
+
+.screenshot-tailor img {
+
+width: 90%;
+height: 90%;
+border: 1px solid #fff;
+
+}
+
+
+
+ul.skills-tailor {
+  color: #fff;
+  padding-top: 20px;
+}
+
+ul.skills-tailor li {
+
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+/*Responsive tailor store*/
+
+@media (max-width: 1000px) {
+
+.tailor {
+
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-left: 30px;
+
+}
+.aboutproject-tailor {
+
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.screenshot-tailor img {
 
 width: 80%;
 height: 80%;
